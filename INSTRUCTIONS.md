@@ -14,7 +14,7 @@ A 'Submit' button should collect the form information, store the information to 
 Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.
 
 ### Files Provided
-No files have been provided (just instructions.md and a readme.md). Instead of forking and cloning this repo, please choose "Use This Template" (green button) and name your new repo "jquery-salary-calculator" and clone down from there. Make sure to commit regularily!
+No files have been provided (just instructions.md and a readme.md). Instead of forking and cloning this repo, please choose "Use This Template" (green button) and name your new repo "weekend-jquery-salary-calculator" and clone down from there. Make sure to commit regularily!
 
 ### Wireframe
 
@@ -24,7 +24,7 @@ No files have been provided (just instructions.md and a readme.md). Instead of f
 
 Add styling or extra functionality that fits with the theme of this assignment.
 
-Once the employee is deleted, update the total spend on salaries account for this employee's removal. This will require that the logic knows which element was removed. You will need to use `.text()` as a getter or look into jQuery's `.data()` function. This is tricky! 
+Once the employee is deleted, update the _Total Monthly Cost_ section on the page to reflect the employee's removal. _HINT:_ You will need to figure out which employee was removed, in order to subtract their salary from the total. Consider using `.text()` as a getter, or look into jQuery's `.data()` function. This is tricky! 
 
 ## Reminder About Modes
 
