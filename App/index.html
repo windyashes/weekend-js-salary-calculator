@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet.css">
-    <link rel="javascript" href="./script.js">
+    <script src="./script.js"></script>
     </script>
     <title>Document</title>
 </head>
@@ -17,13 +17,13 @@
         <!-- <form id="salary-calculator">
 
         </form> -->
-        <form id="employee-form">
+        <form id="employee-form" onSubmit="submitEmployeeForm(event)">
             <input placeholder="First Name" id="first-name" required/>
             <input placeholder="Last Name" id="last-name" required/>
             <input placeholder="Employee ID" id="employee-id" required/>
             <input placeholder="Title" id="employee-title" required/>
             <input placeholder="Annual Salary" id="annual-salary" required/>
-            <button onclick="submitEmployeeForm(event)">Submit</button>
+            <button>Submit</button>
         </form>
         <!-- Employe Table -->
         <table>
