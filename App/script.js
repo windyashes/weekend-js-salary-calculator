@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', onReady(), false)
-
+let totalSalary = 0;
 function onReady(){
     console.log('dom is ready');
 }
@@ -7,7 +7,7 @@ function onReady(){
 
 function submitEmployeeForm(event){
     event.preventDefault();
-    alert('i ran')
+    // alert('i ran')
     let firstNameElement = document.getElementById('first-name');
     let lastNameElement = document.getElementById('last-name');
     let employeeIDElement = document.getElementById('employee-id');
@@ -19,6 +19,9 @@ function submitEmployeeForm(event){
     let employeeID = employeeIDElement.value;
     let title = titleElement.value;
     let salary = salaryElement.value;
+
+    let monthly = Math.round(Number(salary)/12)
+    totalSalary += monthly;
 
     document.getElementById('employee-table').innerHTML += `
         <tr>
@@ -38,11 +41,19 @@ function submitEmployeeForm(event){
                 ${salary}
            </td>
            <td>
-              <button onclick="deleteEmployee(event)">Delete</button>
+              <button onclick="deleteEmployee(event)" data-monthly="${monthly}">Delete</button>
           </td>
          </tr>
     `
+    
+    renderMonthly();
 }
 function deleteEmployee(event){
+    console.log(event.target.dataset.monthly);
+   totalSalary -= Number( event.target.dataset.monthly );
     event.target.closest('tr').remove();
+    renderMonthly();
+}
+function renderMonthly(){
+    document.getElementById('monthly').innerText = `${totalSalary}`;
 }
