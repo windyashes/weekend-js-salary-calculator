@@ -1,0 +1,76 @@
+:root {
+    --text: #000000;
+    --text2: rgb(255, 204, 0);
+    --background: #ffffff;
+    --primary: #000000;
+    --secondary: #5b5b5b;
+    --accent: #b9b6b6;
+  }
+ 
+  
+  header{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--primary);
+    color:var(--text2);
+    padding: 10px;
+    margin: 0%;
+    font-variant: small-caps;
+  }
+  h2{
+    color: var(--text);
+  }
+  body {
+    background-color: var(--background);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    margin: 10px;
+    padding: 10px;
+  }
+  table {
+    width:100%;
+    font-family:monospace;
+    th {
+        background-color: var(--primary);
+        margin: 0%;
+        border: 2px solid var(--accent);
+        text-align: center;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color:var(--text2);
+    }
+    td {
+        height: 100%;
+        /* width: 18%; */
+    }
+    tr:nth-child(even) {
+        background-color: var(--accent);
+    }
+    tr:nth-child(odd){
+        background-color: var(--secondary);
+        color: var(--text2);
+    }
+    table-layout: fixed;
+    border: none;
+   
+    
+
+
+  }
+  footer {
+    background-color: var(--primary);
+    padding: 10px;
+    margin-top: auto;
+    min-height: 8vh;
+  }
+  input{
+    width:98%;
+    margin: 0%;
+    padding:0%;
+    font-family: monospace;
+    /* width: 18%; */
+  }

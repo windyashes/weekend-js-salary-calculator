@@ -12,18 +12,21 @@
     <header>
         <h1 style="text-align: center;"><strong>Employee Salary Calculator</strong></h1>
     </header>
-    <h2>Add Employee</h2>
+    
     <main>
-        <!-- <form id="salary-calculator">
-
-        </form> -->
+        <!-- <form id="salary-calculator"> -->
+        <h2>Add Employee</h2>
+        <!-- </form> -->
         <form id="employee-form" onSubmit="submitEmployeeForm(event)">
-            <input placeholder="First Name" id="first-name" required/>
-            <input placeholder="Last Name" id="last-name" required/>
-            <input placeholder="Employee ID" id="employee-id" required/>
-            <input placeholder="Title" id="employee-title" required/>
-            <input placeholder="Annual Salary" id="annual-salary" required/>
-            <button>Submit</button>
+            <table>
+                <tr>
+            <td><input placeholder="First Name" id="first-name" required/></td>
+            <td><input placeholder="Last Name" id="last-name" required/></td>
+            <td><input placeholder="Employee ID" id="employee-id" required/></td>
+            <td><input placeholder="Title" id="employee-title" required/></td>
+            <td><input placeholder="Annual Salary" id="annual-salary" required/></td>
+            <td><button>Submit</button></td>
+                </tr>
         </form>
         <!-- Employe Table -->
         <table>
@@ -45,15 +48,23 @@
                     Annual Salary
                     </th>
                     <th>
-                    <!-- delete -->
+                    
                     </th>
                 </tr>
             </thead>
             <tbody id="employee-table">
                 <!-- employee goes here -->
             </tbody>
+            <tfoot>
+                <tr>
+
+                </tr>
+            </tfoot>
         </table>
         <h2 style="float: right;"><strong>Total Monthly Expense : </strong><span id='monthly'>0</span></h2>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
