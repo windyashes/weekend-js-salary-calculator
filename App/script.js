@@ -45,6 +45,11 @@ function submitEmployeeForm(event){
           </td>
          </tr>
     `
+    firstNameElement.value = '';
+    lastNameElement.value = '';
+    employeeIDElement.value = '';
+    titleElement.value = '';
+    salaryElement.value = '';
     
     renderMonthly();
 }
